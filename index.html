@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafficTeach — Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Raffic<span>Teach</span></div>
+        <nav class="navigation">
+            <a href="index.html" class="nav-link active">Головна</a>
+            <a href="care.html" class="nav-link">Вказівки з догляду</a>
+            <a href="feedback.html" class="nav-link">Зворотній зв'язок</a>
+        </nav>
+    </header>
+
+    <main class="site-container">
+        
+        <section class="hero-layout">
+            <div class="hero-left-content">
+                <h1>CAT-SENSE</h1>
+                <p>На цьому вебінарі ми розглянемо новітні відкриття у сфері котячої психології та інноваційні методи догляду, які допоможуть вам зрозуміти вашого улюбленця краще, ніж будь-коли. Запишіть свій шлях до гармонії!</p>
+                <a href="#registration-section" class="btn-purple scroll-trigger">ЗАПИСАТИСЯ</a>
+            </div>
+            
+            <div class="hero-right-widgets">
+                <div class="widget-time-circle">
+                    <span class="widget-sub">зустрічаємося</span>
+                    <span class="widget-main">20:00</span>
+                </div>
+                <div class="widget-date-rect">
+                    <span class="widget-sub">вебінар пройде</span>
+                    <span class="widget-main">15.10.2023</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-info-section">
+            <div class="main-feature-card">
+                <div class="feature-text">
+                    <h3>ДЛЯ КОГО:</h3>
+                    <p>Для всіх хто цікавиться здоров'ям, харчуванням та поведінкою своїх улюбленців. Ви навчитесь розпізнавати приховані потреби вашого кота і забезпечити йому щасливе життя</p>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="cat-image-mock"></div>
+                </div>
+            </div>
+
+            <div class="sub-features-grid">
+                <div class="sub-card">
+                    <h4>Новітні знання</h4>
+                    <p>Ви дізнаєтесь про найновіші відкриття в котячій поведінці та послухаєте лекцію</p>
+                </div>
+                <div class="sub-card">
+                    <h4>Технології та інновації</h4>
+                    <p>Розберетеся в тому, як технології можуть допомогти у догляді за котами</p>
+                </div>
+                <div class="sub-card">
+                    <h4>Запитання та відповіді</h4>
+                    <p>Отримаєте відповіді на свої запитання щодо здоров’я та поведінки вашого кота</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration-section" class="registration-form-container">
+            <div class="registration-section-wrapper">
+    
+                <div class="registration-left-image">
+                    <img src="cat2.jpg" alt="Котик">
+                </div>
+
+                <div class="registration-inner-card">
+                    <h2>Заповніть форму</h2>
+                    <p class="form-subtext">і ми надішлемо вам доступ до вебінару та матеріали на пошту</p>
+        
+                    <form class="interactive-form">
+                        <div class="input-container">
+                            <input type="text" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" placeholder="Ваш e-mail" required>
+                        </div>
+                        <button type="submit" class="btn-purple">ЗАПИСАТИСЯ</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="webstudio-footer">
+        <div class="footer-content-inside">
+            <div class="footer-logo-block">
+                <span class="footer-logo">🐾 RafficTeach</span>
+            </div>
+            <div class="footer-contacts-list">
+                <span class="contact-item">📍 м. Вінниця, пров. Ясний, 32</span>
+                <a href="mailto:princes2009r@gmail.com" class="contact-item">✉️ princes2009r@gmail.com</a>
+                <a href="tel:+380685162945" class="contact-item">📞 +38 (68) 516 29 45</a>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#" class="social-link" title="Instagram">📸 Instagram</a>
+                <a href="#" class="social-link" title="Facebook">📘 Facebook</a>
+                <a href="#" class="social-link" title="Viber">💜 Viber</a>
+                <a href="#" class="social-link" title="Telegram">✈️ Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="fixed-arrow-up" id="arrowUp">↑</a>
+
+    <script>
+        document.getElementById('webinarForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.reset();
+        });
+
+        document.querySelector('.scroll-trigger').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('registration-section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('arrowUp').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
